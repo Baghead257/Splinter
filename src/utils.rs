@@ -10,5 +10,5 @@ pub fn banner() {
 }
 
 pub fn copyright() {
-    println!("{}", "\n\n".bright_cyan())
+    println!("{}", "\nhttps://github.com/Baghead257/Splinter\n".bright_cyan())
 }
