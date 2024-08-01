@@ -9,7 +9,7 @@ pub fn initialize() -> Request {
     let app = Command::new("Proton")
         .version("1.0")
         .author("Unknown")
-        .about("Gather information about Proton")
+        .about("Investigate Protonmail accounts and ProtonVPN IP addresses")
         .arg(
             Arg::new("mail")
                 .conflicts_with("ip")
@@ -17,7 +17,7 @@ pub fn initialize() -> Request {
                 .long("mail")
                 .value_parser(value_parser!(String))
                 .help_heading("GENERAL options")
-                .help("Investigate Protonmail accounts and ProtonVPN IP addresses"),
+                .help("Gather informations about ProtonMail"),
         )
         .arg(
             Arg::new("ip")
