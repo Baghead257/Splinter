@@ -17,7 +17,7 @@ pub fn initialize() -> Request {
                 .long("mail")
                 .value_parser(value_parser!(String))
                 .help_heading("GENERAL options")
-                .help("Gather informations about ProtonMail"),
+                .help("Gather information about ProtonMail"),
         )
         .arg(
             Arg::new("ip")
